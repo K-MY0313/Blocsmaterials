@@ -1,0 +1,76 @@
+{
+  "overall": {
+    "label": "総合評価",
+    "weights": {
+      "strength": 2.0,
+      "stability": 1.5,
+      "heat": 1.0,
+      "workability": 0.5,
+      "corrosion": 0.5,
+      "quantum_drift_abs": -1.0
+    }
+  },
+  "struct": {
+    "label": "構造材（骨組み）",
+    "weights": {
+      "strength": 2.0,
+      "stability": 1.5,
+      "heat": 0.5,
+      "quantum_drift_abs": -1.0
+    },
+    "filters": {
+      "stability_min": 4.0
+    }
+  },
+  "high_temp": {
+    "label": "高温材（炉・エンジン用）",
+    "weights": {
+      "heat": 2.0,
+      "stability": 1.0,
+      "strength": 0.5,
+      "quantum_drift_abs": -0.5
+    },
+    "filters": {
+      "heat_min": 15.0
+    }
+  },
+  "outer": {
+    "label": "外装・防錆材",
+    "weights": {
+      "corrosion": 2.0,
+      "workability": 1.5,
+      "stability": 0.5
+    },
+    "filters": {
+      "corrosion_min": 48.5
+    }
+  },
+  "catalyst": {
+    "label": "触媒っぽい",
+    "weights": {
+      "strength": 0.5,
+      "stability": 1.0,
+      "heat": -1.5,
+      "quantum_drift_abs": 3.0
+    },
+    "filters": {
+      "stability_min": 7.0,
+      "heat_max": 8.0,
+      "quantum_drift_abs_min": 0.2
+    }
+  },
+  "superconductor": {
+    "label": "超電導っぽい",
+    "weights": {
+      "strength": 0.5,
+      "stability": 2.0,
+      "heat": -2.0,
+      "quantum_drift_abs": -4.0
+    },
+    "filters": {
+      "stability_min": 7.5,
+      "heat_max": 4.0,
+      "quantum_drift_abs_max": 0.15
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# --- venv / virtualenv ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+
+# --- Jupyter / IDE ---
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- logs / temp ---
+*.log
+*.tmp
+
+# --- data outputs (必要なら調整) ---
+# 生成物のCSVを上げたくないならONにする
+# materials.csv
+# materials_ranked.csv
+# materials_ranked_profiles.csv
+# materials_with_cluster.csv
