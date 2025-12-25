@@ -19,7 +19,8 @@
       "quantum_drift_abs": -1.0
     },
     "filters": {
-      "stability_min": 4.0
+      "stability_min": 4.0,
+      "quantum_drift_abs_max": 0.30
     }
   },
   "high_temp": {
@@ -31,7 +32,8 @@
       "quantum_drift_abs": -0.5
     },
     "filters": {
-      "heat_min": 15.0
+      "heat_min": 15.0,
+      "quantum_drift_abs_max": 0.30
     }
   },
   "outer": {
@@ -42,7 +44,8 @@
       "stability": 0.5
     },
     "filters": {
-      "corrosion_min": 48.5
+      "corrosion_min": 48.5,
+      "quantum_drift_abs_max": 0.30
     }
   },
   "catalyst": {
@@ -56,7 +59,8 @@
     "filters": {
       "stability_min": 7.0,
       "heat_max": 8.0,
-      "quantum_drift_abs_min": 0.2
+      "quantum_drift_abs_min": 0.2,
+      "quantum_drift_abs_max": 0.30
     }
   },
   "superconductor": {
